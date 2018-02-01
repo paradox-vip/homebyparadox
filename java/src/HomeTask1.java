@@ -1,15 +1,22 @@
 public class HomeTask1 {
     public static void main(String[] args) {
-        double addition=add(5,10);
-        System.out.println("addition"+addition);
-        double subtraction=sub(15,8);
-        System.out.println(subtraction);
-        double division=dib(subtraction,4);
-        System.out.println(division);
-        double multiplaction=mull(8,5);
-        System.out.println(multiplaction);
-        double module=mode(2,3);
-        System.out.println(module);
+        double addition = add(5.5, 10.1);
+        System.out.println(" Addition " + addition);
+        double subtraction = sub(15.8, 8.8);
+        System.out.println(" Subtraction " + subtraction);
+        double division = dib(subtraction, 4.3);
+        System.out.println(" Division " + division);
+        double multiplaction = mull(9.8, 5);
+        System.out.println(" Multiplaction " + multiplaction);
+        double module = mode(10.1, 5.8);
+        System.out.println(" Module " + module);
+        double avg = avg(8.3, 15);
+        System.out.println(" Avg " + avg);
+        double pow = pow(2);
+        System.out.println(" Pow " + pow);
+        double percent = percent(100, 25);
+        System.out.println(" Percent " + percent);
+
 
     }
 
@@ -18,7 +25,7 @@ public class HomeTask1 {
         return result;
     }
 
-    public static double sub(int num1, int num2) {
+    public static double sub(double num1, double num2) {
         double result = num1 - num2;
         return result;
     }
@@ -35,6 +42,21 @@ public class HomeTask1 {
 
     public static double mode(double num1, double num2) {
         double result = num1 % num2;
+        return result;
+    }
+
+    public static double avg(double num1, double num2) {
+        double result = (num1 + num2) / 2;
+        return result;
+    }
+
+    public static double pow(double num1) {
+        double result = num1 * num1;
+        return result;
+    }
+
+    public static double percent(double num1, double percent) {
+        double result = num1 * percent/100;
         return result;
     }
 }
